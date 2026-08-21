@@ -1,0 +1,6 @@
+streamlit>=1.30.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+PyPDF2>=3.0.0
+langchain-core>=0.2.0
+langchain-openrouter>=0.1.0
