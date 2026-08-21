@@ -97,7 +97,7 @@ TIER_LABELS = {
 @st.cache_resource(show_spinner=False)
 def get_openrouter_model(model_name: str, temperature: float) -> ChatOpenRouter:
     """Erstellt (und cached) das LangChain-Chat-Modell für OpenRouter."""
-    api_key = st.secrets("OPEN_ROUTER_API_KEY")
+    api_key = st.secrets["OPEN_ROUTER_API_KEY"]
     if not api_key: raise ValueError("OPEN_ROUTER_API_KEY not found in environment/.env")
     return ChatOpenRouter(model=model_name, temperature=temperature, api_key=api_key)
 
